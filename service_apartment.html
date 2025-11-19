@@ -5,44 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LuxStay | Premium Corporate Housing</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Sticky Header -->
+    <!-- Fixed Header with Dropdown -->
     <header class="header">
         <div class="nav-container">
             <h1 class="logo">LuxStay</h1>
             <nav class="nav-menu">
-                <a href="#home" class="nav-link">Your Relocation</a>
-                <a href="#services" class="nav-link">Our Service</a>
-                <a href="#partner" class="nav-link">Partner with us</a>
-                <a href="#search" class="nav-link search-trigger">Search Your Location</a>
+                <div class="nav-item">
+                    <a href="#home" class="nav-link">Your Relocation</a>
+                    <div class="dropdown-menu">
+                        <a href="#">Corporate Housing</a>
+                        <a href="#">Short-term Stays</a>
+                        <a href="#">Long-term Assignments</a>
+                        <a href="#">Team Relocation</a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    <a href="#services" class="nav-link">Our Service</a>
+                    <div class="dropdown-menu">
+                        <a href="#">24/7 Support</a>
+                        <a href="#">Housekeeping</a>
+                        <a href="#">Concierge Service</a>
+                        <a href="#">Airport Pickup</a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    <a href="#partner" class="nav-link">Partner with us</a>
+                    <div class="dropdown-menu">
+                        <a href="#">Corporate Accounts</a>
+                        <a href="#">Property Owners</a>
+                        <a href="#">Travel Agencies</a>
+                        <a href="#">HR Departments</a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    <a href="#search" class="nav-link search-trigger">Search Your Location</a>
+                    <div class="dropdown-menu">
+                        <a href="#">London</a>
+                        <a href="#">Paris</a>
+                        <a href="#">New Delhi</a>
+                        <a href="#">Tokyo</a>
+                    </div>
+                </div>
             </nav>
-            <button class="menu-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
         </div>
     </header>
 
-    <!-- Enhanced Hero Section -->
+    <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="hero-background"></div>
         <div class="hero-content">
-            <h1 class="hero-title">Seamless Corporate Relocation. Anywhere in the World.</h1>
+            <div class="hero-badge">Premium Corporate Housing</div>
+            <h1 class="hero-title">Seamless Corporate Relocation.<br>Anywhere in the World.</h1>
             <p class="hero-subtitle">Premium accommodations for business travelers with all the comforts of home and the amenities of a luxury hotel.</p>
             
-            <!-- Enhanced Search Form -->
+            <!-- Search Form -->
             <div class="search-hero">
                 <div class="search-group">
                     <div class="input-group floating">
-                        <input type="text" id="destination" required>
+                        <input type="text" id="destination" required placeholder=" ">
                         <label for="destination">Destination</label>
                     </div>
                     <div class="input-group floating">
@@ -56,19 +79,38 @@
                     <button class="btn-primary btn-hero">Find Properties</button>
                 </div>
             </div>
+
+            <!-- Stats -->
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">20+</span>
+                    <span class="stat-label">Years Experience</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">500+</span>
+                    <span class="stat-label">Properties</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">24/7</span>
+                    <span class="stat-label">Support</span>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- About Section -->
     <section class="about fade-up">
         <div class="container">
-            <h2 class="section-title">Effortless Solutions for Business Travel & Relocation</h2>
+            <div class="section-header">
+                <span class="section-subtitle-small">Why Choose Us</span>
+                <h2 class="section-title">Effortless Solutions for Business Travel & Relocation</h2>
+            </div>
             <div class="about-content">
                 <p class="text">Managing corporate moves shouldn't be complicated. At LuxStay, we make it simple with dedicated account management, seamless planning, and tailored relocation solutions that save time and reduce administrative burden. Whether it's a last-minute assignment, a team transfer, or a long-term relocation, we coordinate safe, secure, and well-located housing, backed by 24/7 support and exceptional service standards.</p>
-
                 <p class="text">No uncertainty. No unnecessary stress. Just relocation solutions designed around your people. From short-term assignments to long-term placements, our team manages every detail with a personal touch.</p>
-                
-                <p class="text highlight">We look after people.</p>
+                <div class="tagline-box">
+                    <strong>We look after people.</strong>
+                </div>
             </div>
         </div>
     </section>
@@ -81,6 +123,7 @@
                     <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" alt="Corporate Solutions" />
                 </div>
                 <div class="card-content">
+                    <div class="card-badge">Corporate Solutions</div>
                     <h3>Flexible Corporate Solutions. Built Around You.</h3>
                     <p>With over 20 years of experience in corporate relocation, we offer personalised solutions designed to meet the unique needs of your business.</p>
                     <ul class="feature-list">
@@ -94,6 +137,7 @@
 
             <div class="service-card glass-card reverse">
                 <div class="card-content">
+                    <div class="card-badge">Guest Experience</div>
                     <h3>Exceptional Guest Experience. Every Time.</h3>
                     <p>We believe the best corporate stays are those that feel like home. That's why we go beyond the basics to deliver a unique experience for every guest.</p>
                     <ul class="feature-list">
@@ -114,6 +158,7 @@
                     <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" alt="Beautiful Spaces" />
                 </div>
                 <div class="card-content">
+                    <div class="card-badge">Premium Locations</div>
                     <h3>Beautiful Spaces. Business-Ready Locations.</h3>
                     <p>We source high-quality serviced accommodation in central, well-connected locations.</p>
                     <ul class="feature-list">
@@ -126,80 +171,151 @@
         </div>
     </section>
 
+    <!-- Features Grid -->
+    <section class="features-section fade-up">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🏢</div>
+                    <h4>Corporate Rates</h4>
+                    <p>Exclusive pricing for business clients with volume discounts</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h4>Secure Booking</h4>
+                    <p>Safe and encrypted payment processing</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌍</div>
+                    <h4>Global Network</h4>
+                    <p>Properties in major cities worldwide</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h4>Fast Setup</h4>
+                    <p>Quick onboarding and instant confirmations</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Locations Section -->
     <section class="locations-section fade-up" id="search">
         <div class="container">
-            <h2 class="section-title">Popular Locations</h2>
-            <div class="locations-scroll">
-                <div class="location-card glass-card">
-                    <div class="location-image">
-                        <img src="https://plus.unsplash.com/premium_photo-1679582754971-5a2d8ae7e6fa?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="London" />
-                        <div class="location-overlay">
-                            <span class="explore-text">Explore →</span>
+            <div class="section-header">
+                <span class="section-subtitle-small">Explore Destinations</span>
+                <h2 class="section-title">Popular Locations</h2>
+            </div>
+            <div class="locations-wrapper">
+                <button class="arrow arrow-left" id="arrow-left">‹</button>
+                <button class="arrow arrow-right" id="arrow-right">›</button>
+                <div class="locations-scroll" id="locations-scroll">
+                    <div class="location-card glass-card">
+                        <div class="location-image">
+                            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb" alt="London" />
+                            <div class="location-overlay">
+                                <span class="explore-text">Explore →</span>
+                            </div>
+                        </div>
+                        <div class="location-content">
+                            <h3>London</h3>
+                            <p>150+ Properties Available</p>
                         </div>
                     </div>
-                    <div class="location-content">
-                        <h3>London</h3>
-                        <p>Elegant apartments in prime central locations</p>
-                    </div>
-                </div>
 
-                <div class="location-card glass-card">
-                    <div class="location-image">
-                        <img src="https://images.unsplash.com/photo-1522582324369-2dfc36bd9275?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Paris" />
-                        <div class="location-overlay">
-                            <span class="explore-text">Explore →</span>
+                    <div class="location-card glass-card">
+                        <div class="location-image">
+                            <img src="https://images.unsplash.com/photo-1494526585095-c41746248156" alt="Paris" />
+                            <div class="location-overlay">
+                                <span class="explore-text">Explore →</span>
+                            </div>
+                        </div>
+                        <div class="location-content">
+                            <h3>Paris</h3>
+                            <p>80+ Properties Available</p>
                         </div>
                     </div>
-                    <div class="location-content">
-                        <h3>Paris</h3>
-                        <p>Charming stays in the heart of the city</p>
-                    </div>
-                </div>
 
-                <div class="location-card glass-card">
-                    <div class="location-image">
-                        <img src="https://images.unsplash.com/photo-1583419605740-52b4f8de9dd5?q=80&w=741&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="New Delhi" />
-                        <div class="location-overlay">
-                            <span class="explore-text">Explore →</span>
+                    <div class="location-card glass-card">
+                        <div class="location-image">
+                            <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d" alt="New Delhi" />
+                            <div class="location-overlay">
+                                <span class="explore-text">Explore →</span>
+                            </div>
+                        </div>
+                        <div class="location-content">
+                            <h3>New Delhi</h3>
+                            <p>120+ Properties Available</p>
                         </div>
                     </div>
-                    <div class="location-content">
-                        <h3>New Delhi</h3>
-                        <p>Modern apartments in business districts</p>
-                    </div>
-                </div>
 
-                <div class="location-card glass-card">
-                    <div class="location-image">
-                        <img src="https://plus.unsplash.com/premium_photo-1661914240950-b0124f20a5c1?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Tokyo" />
-                        <div class="location-overlay">
-                            <span class="explore-text">Explore →</span>
+                    <div class="location-card glass-card">
+                        <div class="location-image">
+                            <img src="https://images.unsplash.com/photo-1540959733332-8a43b3f16d5b" alt="Tokyo" />
+                            <div class="location-overlay">
+                                <span class="explore-text">Explore →</span>
+                            </div>
+                        </div>
+                        <div class="location-content">
+                            <h3>Tokyo</h3>
+                            <p>95+ Properties Available</p>
                         </div>
                     </div>
-                    <div class="location-content">
-                        <h3>Tokyo</h3>
-                        <p>Contemporary living in vibrant neighborhoods</p>
-                    </div>
-                </div>
 
-                <div class="location-card glass-card">
-                    <div class="location-image">
-                        <img src="https://images.unsplash.com/photo-1496588152823-86ff7695e68f?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="New York" />
-                        <div class="location-overlay">
-                            <span class="explore-text">Explore →</span>
+                    <div class="location-card glass-card">
+                        <div class="location-image">
+                            <img src="https://images.unsplash.com/photo-1513584684374-8bab748fbf90" alt="New York" />
+                            <div class="location-overlay">
+                                <span class="explore-text">Explore →</span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="location-content">
-                        <h3>New York</h3>
-                        <p>Luxury lofts with skyline views</p>
+                        <div class="location-content">
+                            <h3>New York</h3>
+                            <p>200+ Properties Available</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Partner Section -->
+    <!-- Testimonials -->
+    <section class="testimonials-section fade-up">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle-small">Client Reviews</span>
+                <h2 class="section-title">What Our Clients Say</h2>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card glass-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Outstanding service! Made our corporate relocation seamless and stress-free. Highly recommended!"</p>
+                    <div class="testimonial-author">
+                        <strong>Sarah Johnson</strong>
+                        <span>HR Director, Tech Corp</span>
+                    </div>
+                </div>
+                <div class="testimonial-card glass-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Beautiful apartments in perfect locations. The 24/7 support team is incredibly responsive."</p>
+                    <div class="testimonial-author">
+                        <strong>Michael Chen</strong>
+                        <span>Operations Manager, Global Inc</span>
+                    </div>
+                </div>
+                <div class="testimonial-card glass-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Professional, efficient, and always goes the extra mile. Our go-to for all relocations."</p>
+                    <div class="testimonial-author">
+                        <strong>Emma Williams</strong>
+                        <span>CEO, Startup Solutions</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partner Form Section -->
     <section class="partner-section fade-up" id="partner">
         <div class="container">
             <h2 class="section-title">Looking for Relocation Support?</h2>
@@ -211,39 +327,39 @@
             <form class="partner-form glass-card">
                 <div class="form-grid">
                     <div class="input-group floating">
-                        <input type="text" id="full-name" required>
-                        <label for="full-name">Full Name</label>
+                        <input type="text" id="full-name" required placeholder=" ">
+                        <label for="full-name">Full Name *</label>
                     </div>
 
                     <div class="input-group floating">
-                        <input type="email" id="email" required>
-                        <label for="email">Email Address</label>
+                        <input type="email" id="email" required placeholder=" ">
+                        <label for="email">Email Address *</label>
                     </div>
 
                     <div class="input-group floating">
-                        <input type="text" id="company" required>
-                        <label for="company">Company Name</label>
+                        <input type="text" id="company" required placeholder=" ">
+                        <label for="company">Company Name *</label>
                     </div>
 
                     <div class="input-group floating">
-                        <input type="tel" id="phone">
+                        <input type="tel" id="phone" placeholder=" ">
                         <label for="phone">Phone Number</label>
                     </div>
                 </div>
 
                 <div class="input-group floating">
-                    <input type="text" id="duration">
+                    <input type="text" id="duration" placeholder=" ">
                     <label for="duration">Average Duration Of Booking</label>
                 </div>
 
                 <div class="input-group floating">
-                    <input type="text" id="locations-required">
+                    <input type="text" id="locations-required" placeholder=" ">
                     <label for="locations-required">Key Locations Required</label>
                 </div>
 
                 <div class="input-group floating">
-                    <textarea id="enquiry" rows="4" required></textarea>
-                    <label for="enquiry">Enquiry</label>
+                    <textarea id="enquiry" rows="4" required placeholder=" "></textarea>
+                    <label for="enquiry">Enquiry *</label>
                 </div>
 
                 <div class="form-footer">
@@ -251,7 +367,7 @@
                         <input type="checkbox" id="consent" required>
                         <label for="consent" class="checkbox-label">
                             Please tick this box to confirm that you've read our 
-                            Privacy Policy and Client Terms & Conditions
+                            Privacy Policy and Client Terms & Conditions *
                         </label>
                     </div>
 
@@ -261,17 +377,31 @@
                         <a href="#">Terms of Service</a> apply.
                     </p>
 
-                    <button type="submit" class="btn-primary btn-submit">Submit</button>
+                    <button type="submit" class="btn-primary btn-submit">Submit Enquiry</button>
                 </div>
             </form>
         </div>
     </section>
 
-    <!-- Contact CTA -->
+    <!-- Contact Section -->
     <section class="contact-cta fade-up">
         <div class="container">
             <h2>Ready to Transform Your Corporate Travel Experience?</h2>
             <p>Book your stay or schedule an apartment inspection today!</p>
+            <div class="contact-methods">
+                <div class="contact-method">
+                    <span class="contact-icon">📧</span>
+                    <p>info@luxstay.com</p>
+                </div>
+                <div class="contact-method">
+                    <span class="contact-icon">📞</span>
+                    <p>+234 (000) 123-4567</p>
+                </div>
+                <div class="contact-method">
+                    <span class="contact-icon">📍</span>
+                    <p>London | Paris | Tokyo | NYC</p>
+                </div>
+            </div>
             <button class="btn-primary btn-large">Get in Touch</button>
         </div>
     </section>
@@ -313,9 +443,38 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 LuxStay Project — Group 14.</p>
+                <p>&copy; 2025 LuxStay – All Rights Reserved.</p>
             </div>
         </div>
     </footer>
+
+    <script>
+        // Location slider arrows
+        const scrollContainer = document.getElementById('locations-scroll');
+        const leftArrow = document.getElementById('arrow-left');
+        const rightArrow = document.getElementById('arrow-right');
+
+        leftArrow.addEventListener('click', () => {
+            scrollContainer.scrollBy({ left: -370, behavior: 'smooth' });
+        });
+
+        rightArrow.addEventListener('click', () => {
+            scrollContainer.scrollBy({ left: 370, behavior: 'smooth' });
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
 </body>
 </html>
