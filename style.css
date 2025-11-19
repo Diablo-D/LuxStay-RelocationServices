@@ -330,10 +330,8 @@ h3 { font-size: clamp(1.5rem, 3vw, 2rem); }
 .input-group.floating textarea:not(:placeholder-shown) + label {
     top: -0.6rem;
     left: 0.8rem;
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     color: var(--accent);
-    background: var(--bg-primary);
-    padding: 0 0.4rem;
 }
 
 .input-group input:focus,
